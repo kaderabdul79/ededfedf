@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('last_name');
             $table->string('middle_name')->nullable();
             $table->string('address');
-            $table->foreignId('department_id')->constrained();
+            // $table->foreignId('department_id')->constrained();
             $table->foreignId('city_id')->constrained();
             $table->foreignId('state_id')->constrained();
             $table->foreignId('country_id')->constrained();
